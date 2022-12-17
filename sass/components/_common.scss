@@ -1,0 +1,109 @@
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+a {
+    text-decoration: none;
+    background: transparent;
+    font-style: normal;
+}
+
+a:active,
+a:focus {
+    outline: var(--focus-outline);
+}
+
+:focus {
+    outline: var(--focus-outline);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.14;
+    background: var(--main-background-color);
+}
+
+button {
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    background: var(--white-color);
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    padding: 94px 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+}

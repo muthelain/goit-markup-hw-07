@@ -1,0 +1,35 @@
+.hero {
+    @extend .section;
+    max-width: 1600px;
+    padding: 200px 15px;
+    background: #2f303a;
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        color: var(--white-color);
+        width: 696px;
+        margin: auto;
+        margin-bottom: 30px;
+        font-family: var(--main-font);
+    }
+
+    &__button {
+        @extend %standart-button;
+        width: 216px;
+        height: 50px;
+        margin: auto;
+        display: block;
+    }
+
+    &__button:hover,
+    &__button:focus {
+        background: var(--button-hover-color);
+    }
+}
